@@ -7,6 +7,7 @@
         <meta name="author" content="Steven Olson" />
         <link href="css/impress.css" rel="stylesheet" />
         <script type="text/javascript" src='js/jquery-1.8.2.min.js'></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
     </head>
     <body>
@@ -14,31 +15,80 @@
 		    Your browser doesn't support impress.js.  Try Chrome or Safari.
 		</p>
 		<div id="impress">
-			<div id="title" class="step" data-x="0" data-y="0" data-z="0">
-			    <h1>I Can Haz C</h1> 
+			<div id="title" class="step" data-x="0" data-y="0" data-z="0" style="">
+			    <h1>I Can Haz C</h1>
 			    <h3>using C & C++ in the browser</h3>
 			    <h5>By Aaron Frost &amp; Steven Douglas Olson</h5>
 			</div>
-			<div class="step" data-x="-600" data-y="0" data-z="600"  data-rotate-y="75">
+            <div class="step invisible" data-x="0" data-y="-10" data-z="-100" data-scale=".02">
+                <div style="background-image: url(img/codecat.jpg);
+                            height: 500px;
+                            width: 360px;
+                            position: absolute;
+                            top: -140px;
+                            left: 30%;
+                            z-index: -1;
+                            opacity: 0.8;">
+                </div>
+            </div>
+            <!--Add the title page again, so that it will show slide 1 again-->
+            <div class="step invisible" data-x="0" data-y="0" data-z="0" style="">
+                <h1>I Can Haz C</h1>
+                <h3>using C & C++ in the browser</h3>
+                <h5>By Aaron Frost &amp; Steven Douglas Olson</h5>
+            </div>
+            <div class="step" data-x="-500" data-y="0" data-z="600"  data-rotate-y="75">
 				<h2>Intro</h2>
 			</div>
-			<div class="step" data-x="-650" data-y="100" data-z="500" data-rotate-y="75">
+			<div class="step" data-x="-550" data-y="100" data-z="500" data-rotate-y="75">
 				<h4>Aaron Frost</h4>
 			</div>
-			<div class="step" data-x="-650" data-y="200" data-z="500" data-rotate-y="75">
+			<div class="step" data-x="-550" data-y="200" data-z="500" data-rotate-y="75">
 				<h4>Steven Olson</h4>
 			</div>
 
             <div class="step" data-x="0" data-y="1000" data-z="-600">
-                <h1>Let's Chat</h1>
-                <ul>
-                    <li>What is Native Client?</li>
-                    <li>Why do I want it?</li>
-                    <li>How does it work?</li>
-                    <li>Alternatives</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <h2>Topics</h2>
+            </div>
+
+            <!--Explain what it is, at a high level-->
+            <div  class="step" data-x="0" data-y="1100" data-z="-750">
+                <h4>What is Native Client?</h4>
+            </div>
+
+                <div  class="step" data-x="-600" data-y="1100" data-z="-300" data-rotate-y="90">
+                    <h3>Native Client is:</h3>
+                </div>
+                <div  class="step invisible" data-x="-600" data-y="1100" data-z="-300" data-rotate-y="90">
+                    <h3>Native Client is: (high level)</h3>
+                </div>
+                <div  class="step invisible" data-x="-600" data-y="1150" data-z="-300" data-rotate-y="90">
+                    <li>Opensource (lead by Google)</li>
+                </div>
+                <div  class="step invisible" data-x="-600" data-y="1186" data-z="-300" data-rotate-y="90">
+                    <li>Opensource (lead by Google)</li>
+                    <li>Some Other Point</li>
+                </div>
+
+
+            <!--Explain some high level advantages-->
+            <div  class="step" data-x="0" data-y="1160" data-z="-750">
+                <h4>Why do I want it?</h4>
+            </div>
+
+            <!--Explain about Emscripten and LLJS-->
+            <div  class="step" data-x="0" data-y="1220" data-z="-750">
+                <h4>What are my <b>other options</b>?</h4>
+            </div>
+
+            <!--Deeper Dive on the functionality-->
+            <div  class="step" data-x="0" data-y="1280" data-z="-750">
+                <h4>How does it work?</h4>
+            </div>
+
+            <!--Explain the deeper security-->
+            <div  class="step" data-x="0" data-y="1340" data-z="-750">
+                <h4>How does it not violate security?</h4>
             </div>
 
 
