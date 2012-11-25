@@ -1223,7 +1223,102 @@
                             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Only allow jumping to the beginning of known instructions</div>
                         </div>
                     </div>
-                    <div></div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                        </div>
+                    </div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Compiler needs to bundle code so instructions don't overlap 32 byte sections</div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Restrict Jumping to modulus 32 bytes</div>
+                            <BR>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;When jumping to an address, drop the lowest 5 bits</div>
+                        </div>
+                    </div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&raquo;Compile into 32-byte bundles</div>
+                            <div style="padding-left:30px">
+                                <img src="img/32byte.png" alt="32 Bytes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                            <div style="margin-top:50px;">Combination of not allowing jumps into the middle of known instructions</div>
+                            <div>AND</div>
+                            <div>aligning jumpable instructions onto 32-byte bundle edges</div>
+                            <BR>
+                            <div>Allows us to know where the flow of our app is contained</div>
+                        </div>
+                    </div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                            <BR>
+                            <h3>Problem Solved?</h3>
+                        </div>
+                    </div>
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-150" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Allow Jumping while Rejecting Jumping?</div>
+                            <BR>
+                            <h3>Problem Solved?</h3>
+                            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No!</h3>
+                            <BR>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Self Modifying Code</div>
+                        </div>
+                    </div>
+
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-100" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Self Modifying Code</div>
+                            <BR>
+                        </div>
+                    </div>
+
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-100" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Self Modifying Code</div>
+                            <BR>
+                            <h5>once code is validated, it is read/exec enabled. no write access.</h5>
+                            <BR>
+                            <h5>once data is validated, it is read/write enabled. no exec access.</h5>
+                        </div>
+                    </div>
+
+                    <div class="step invisible " data-x="-400" data-y="6050" data-z="-100" data-rotate-x="90" data-rotate-y="90" data-rotate-z="0" >
+                        <div style="float:left; position:absolute;width:100%;font-size:30px;top:-200px;">
+                            <h4>Chrome Sandbox - security</h4>
+                            <div>&rsaquo;Self Modifying Code</div>
+                            <BR>
+                            <h5>once code is validated, it is read/exec enabled. no write access.</h5>
+                            <BR>
+                            <h5>once data is validated, it is read/write enabled. no exec access.</h5>
+                            <BR>
+                            <h5>still have to deal with dynamic libs and JIT code</h5>
+                            <h5>&nbsp;&nbsp;&raquo;this is over my head, the depths of knowledge required to
+                                <BR>&nbsp;&nbsp;&nbsp;&nbsp;prevent an exploit here</h5>
+                        </div>
+                    </div>
+
+                <div class="step invisible" data-x="-400" data-y="5570" data-z="-375" data-rotate-y="90">
+                    <h3>Any Questions?</h3>
+                </div>
+
+
             <div  class="step" data-x="0" data-y="1400" data-z="-750">
                 <h4>What are the tools?</h4>
             </div>
